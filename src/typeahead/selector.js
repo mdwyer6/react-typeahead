@@ -89,7 +89,7 @@ var TypeaheadSelector = createReactClass({
     }
 
     return (
-      <ul className={classList}>
+      <ul className={classList} style={width: '100%', position: 'absolute'}>
         { customValue }
         { results }
       </ul>
