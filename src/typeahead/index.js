@@ -330,7 +330,7 @@ var Typeahead = createReactClass({
 
     var InputElement = this.props.textarea ? 'textarea' : 'input';
     return (
-      <div className={classList}>
+      <div className={classList} style={position: 'relative'}>
         { this._renderHiddenInput() }
         <InputElement ref="entry" type="text"
           disabled={this.props.disabled}
